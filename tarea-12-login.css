@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%; 
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: 
+    linear-gradient(260deg, rgba(206, 228, 242), rgba(67, 29, 29, 0) 120.71%),
+    linear-gradient(30deg, rgb(46, 58, 194), rgba(67, 29, 29, 0) 120.71%),
+    linear-gradient(10deg, rgb(58, 125, 219), rgba(144, 146, 94, 0) 500.71%),
+    linear-gradient(90deg, rgb(108, 121, 251) 50%); */
+     background:
+    linear-gradient(265deg, rgb(206, 228, 242), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(87, 153, 247), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(20deg, rgba(53, 72, 179, 0.974), rgba(0, 0, 255, 0) 200.71%);
+    position: relative;
+    border-radius: 20px;
+}
+.arriba{
+ color: white; 
+ font-size: large;
+ margin-top: 50px;
+ /* top: 120px; */
+ padding: 20px;
+ position: flex;
+ 
+}
+.arriba2{
+ color: white; 
+ font-size: large;
+ margin-top: 50px;
+ left: 30px;
+ top:-15px;;
+ position: absolute;
+.btnarriba2{
+    font: bold;
+    font-size: large;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+ 
+}
+.card {
+    width: 420px;
+    min-height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.titulo h1 {
+    color: #2d3748;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.titulo h3 {
+    color: #4a5568;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.titulo p {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titulos {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+.entrada {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid wheat;
+    padding: 0 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: none;
+}
+
+.abajoCheck {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #6366f1;
+    cursor: pointer;
+}
+
+.remember label {
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+    user-select: none;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #060ae1;
+    font-weight: 500;
+}
+
+
+.btn-signin {
+    width: 100%;
+    height: 48px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-google {
+    width: 100%;
+    height: 48px;
+    background: white;
+    color: grey;
+    border: 0.1px solid rgb(223, 223, 223);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .google-logo{
+    position: relative;
+    width: 30px;
+    border-radius: 25px;
+
+    }
+}
+
+
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.register-link p {
+    font-size: 14px;
+    color: #718096;
+}
+
+.register-link a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
