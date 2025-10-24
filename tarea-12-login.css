@@ -1,224 +1,238 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    margin: 100px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    width: 100%; 
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background: 
-    linear-gradient(260deg, rgba(206, 228, 242), rgba(67, 29, 29, 0) 120.71%),
-    linear-gradient(30deg, rgb(46, 58, 194), rgba(67, 29, 29, 0) 120.71%),
-    linear-gradient(10deg, rgb(58, 125, 219), rgba(144, 146, 94, 0) 500.71%),
-    linear-gradient(90deg, rgb(108, 121, 251) 50%); */
-     background:
-    linear-gradient(265deg, rgb(206, 228, 242), rgba(255, 0, 0, 0) 70.71%),
+body {
+  margin: 0;
+  padding: 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+main {
+  width: 90%;
+  max-width: 400vh;          
+  min-height: 90vh;          
+  border-radius: 20px;
+  padding: 30px 20px;
+
+  background: linear-gradient(
+      265deg,
+      rgb(206, 228, 242),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
     linear-gradient(127deg, rgba(87, 153, 247), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(20deg, rgba(53, 72, 179, 0.974), rgba(0, 0, 255, 0) 200.71%);
-    position: relative;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  position: relative;
 }
-.arriba{
- color: white; 
- font-size: large;
- margin-top: 50px;
- /* top: 120px; */
- padding: 20px;
- position: flex;
+
+.arriba {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.arriba2{
- color: white; 
- font-size: large;
- margin-top: 50px;
- left: 30px;
- top:-15px;;
- position: absolute; 
+
+.arriba2 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
-.btnarriba2{
-    font: bold;
-    font-size: large;
-    background: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
+
+.btnarriba2 {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
 }
+
 .card {
-    
-    width: 60%;
+ width: 60%;
     height: auto;
     min-height: 60vh;
-    max-width: 420px;     
-    
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    padding: 40px 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    position: relative;
+    max-width: 420px; 
+  background-color: white;
+  border-radius: 16px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titulo {
-    text-align: center;
-    margin-bottom: 30px;
-    width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .titulo h1 {
-    color: #2d3748;
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.titulo h3 {
-    color: #4a5568;
-    font-size: 22px;
-    margin-bottom: 8px;
-    font-weight: 600;
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
 }
 
 .titulo p {
-    color: #718096;
-    font-size: 14px;
-    line-height: 1.5;
+  color: #718096;
+  font-size: 0.9rem;
 }
 
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .contenedor {
-    display: flex;
-    flex-direction: column;
-    /* Nota, permite que crezca */
-    flex: 1; 
-    min-width: 0;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .titulos {
-    font-size: 14px;
-    font-weight: 600;
-    color: #4a5568;
-    margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5568;
 }
 
 .entrada {
-    width: 100%;
-    height: auto;
-    min-height: 48px;
-    border-radius: 8px;
-    border: 1px solid wheat;
-    padding: 0 15px;
-    font-size: 15px;
-    transition: all 0.3s ease;
-    background-color: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
 }
 
+
 .abajoCheck {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 5px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .remember {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.remember input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #6366f1;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .remember label {
-    font-size: 14px;
-    color: #4a5568;
-    cursor: pointer;
-    user-select: none;
+  font-size: 0.85rem;
+  color: #4a5568;
 }
 
 .forgot-password {
-    font-size: 14px;
-    color: #060ae1;
-    font-weight: 500;
+  font-size: 0.85rem;
+  color: #060ae1;
+  text-decoration: none;
 }
-
 
 .btn-signin {
-    width: 100%;
-    height: 48px;
-    background: #6366f1;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
+  width: 100%;
+  height: 48px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+.btn-signin:hover {
+  background: #4f46e5;
+}
+
 .btn-google {
-    width: 100%;
-    height: 48px;
-    background: white;
-    color: grey;
-    border: 0.1px solid rgb(223, 223, 223);
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    .google-logo{
-    position: relative;
-    width: 30px;
-    border-radius: 25px;
-
-    }
+  width: 100%;
+  height: 48px;
+  background: white;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.3s ease;
 }
 
+.google-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
 
 .register-link {
-    margin-top: 25px;
-    text-align: center;
-    width: 100%;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .register-link p {
-    font-size: 14px;
-    color: #718096;
+  font-size: 0.9rem;
+  color: #718096;
 }
 
 .register-link a {
-    color: #6366f1;
-    text-decoration: none;
-    font-weight: 500;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
 }
 
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .titulo h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-signin,
+  .btn-google {
+    height: 44px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo h1 {
+    font-size: 1.3rem;
+  }
+
+  .titulo p {
+    font-size: 0.8rem;
+  }
+
+  .entrada {
+    font-size: 0.85rem;
+    height: 42px;
+  }
+
+  .remember label,
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+
+  .google-logo {
+    width: 20px;
+  }
+}
